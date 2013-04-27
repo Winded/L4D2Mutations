@@ -1,0 +1,21 @@
+"chargedodgers"
+{
+	"base"			"chargedodgers"
+	"maxplayers"	"4"
+	"hasdifficulty"	"0"
+	"singlechapter"	"1"
+	
+	"DisplayTitle"	"Charge Dodgers"
+	
+	"Description"	"Dodge the chargers!
+
+Want to test out your reflexes? Try this! You face off waves of chargers that will kill you instantly if they hit you! Whether you dodge them or shoot them, you gotta be fast!"
+	
+	"Image"			"maps/any"
+	"Author"		"Winded"
+	
+	convar
+	{
+		
+	}
+}

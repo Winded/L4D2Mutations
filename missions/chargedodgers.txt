@@ -1,0 +1,48 @@
+"mission"
+{
+	"Name"			"ChargeDodgers"
+	"Version"		"1"
+	"Author"		"Winded"
+	"Website"		""
+	"BuiltIn"		"0"
+	
+	"DisplayTitle"	"Charge Dodgers"
+	"Description"	"Charge Dodgers campaign."
+	
+	"Image"		"maps/any"
+	"OuttroImage"	"vgui/Left4Dead2Logo"
+	
+	"meleeweapons"	""
+	
+	"survivor_set"	"2"		// Which set of survivors should be used. 1=L4D1, 2=L4D2
+
+	"modes"
+	{
+		"chargedodgers"
+		{
+			"1"
+			{
+				"Map" "c1m1_hotel"
+				"DisplayName" "Hotel"
+				"Image" "maps/c1m1_hotel"
+			}		
+			"2"
+			{
+				"Map" "c3m1_plankcountry"
+				"DisplayName" "Plank Country"
+				"Image" "maps/c3m1_plankcountry"
+			}		
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

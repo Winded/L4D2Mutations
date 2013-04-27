@@ -1,0 +1,111 @@
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "barricade_004"
+	"filename" "c:\program files (x86)\steam\steamapps\common\left 4 dead 2 beta\left4dead2\models\props_buildables\plank_barricade01_dmg01.mdl"
+	"origin" "1727.8399658203 7668.1499023438 2665.4299316406"
+	"angles" "-0 270.3500061035 0"
+	"group" 0
+	"rarity" 0
+	"nameindex" 4
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "barricade_002"
+	"filename" "c:\program files (x86)\steam\steamapps\common\left 4 dead 2 beta\left4dead2\models\props_buildables\plank_barricade01_dmg01.mdl"
+	"origin" "1816.7399902344 6847.2202148438 2666.4599609375"
+	"angles" "0 180 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "barricade_003"
+	"filename" "c:\program files (x86)\steam\steamapps\common\left 4 dead 2 beta\left4dead2\models\props_buildables\plank_barricade01_dmg01.mdl"
+	"origin" "1816.0699462891 7236.330078125 2665.4299316406"
+	"angles" "0 180 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "barricade_001"
+	"filename" "c:\program files (x86)\steam\steamapps\common\left 4 dead 2 beta\left4dead2\models\props_buildables\plank_barricade01_dmg01.mdl"
+	"origin" "1816.7399902344 7485.669921875 2665.5600585938"
+	"angles" "0 180 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "playerstart_001"
+	"filename" ""
+	"origin" "1789.8215332031 6771.4716796875 2672.03125"
+	"group" 0
+	"rarity" 0
+	"nameindex" 1
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "playerstart_002"
+	"filename" ""
+	"origin" "1753.7683105469 6772.1176757813 2672.03125"
+	"group" 0
+	"rarity" 0
+	"nameindex" 2
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "playerstart_003"
+	"filename" ""
+	"origin" "1717.7150878906 6772.763671875 2672.03125"
+	"group" 0
+	"rarity" 0
+	"nameindex" 3
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "playerstart_004"
+	"filename" ""
+	"origin" "1682.1013183594 6773.4013671875 2672.03125"
+	"group" 0
+	"rarity" 0
+	"nameindex" 4
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_001"
+	"filename" ""
+	"origin" "1690.5236816406 7535.3540039063 2672.03125"
+	"group" 0
+	"rarity" 0
+	"nameindex" 1
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_002"
+	"filename" ""
+	"origin" "1718.2082519531 7563.4887695313 2672.03125"
+	"group" 0
+	"rarity" 0
+	"nameindex" 2
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_003"
+	"filename" ""
+	"origin" "1750.7347412109 7532.458984375 2672.03125"
+	"group" 0
+	"rarity" 0
+	"nameindex" 3
+}

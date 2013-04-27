@@ -1,0 +1,150 @@
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "c3m1_plankcountry_chargedodgers_barricades_spawn"
+	"filename" ""
+	"origin" "-6080 6656 32"
+	"angles" "0 0 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "playerstart_003"
+	"filename" ""
+	"origin" "-5498.669921875 6038.1899414063 70.5899963379"
+	"angles" "0 -2.6300001144 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "playerstart_001"
+	"filename" ""
+	"origin" "-5504.8598632813 6105.7299804688 71.3499984741"
+	"angles" "0 -0.9200000167 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "playerstart_002"
+	"filename" ""
+	"origin" "-5503.8100585938 6170.8798828125 69.1699981689"
+	"angles" "0 -0.9200000167 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "playerstart_004"
+	"filename" ""
+	"origin" "-5502.4501953125 6226.5600585938 67.2900009155"
+	"angles" "0 0.2700000107 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_3"
+	"filename" ""
+	"origin" "-5981.830078125 6550.9599609375 62.3600006104"
+	"angles" "0 -179.8500061035 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_4"
+	"filename" ""
+	"origin" "-5981.5600585938 6444.66015625 62.2700004578"
+	"angles" "0 -179.8500061035 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_5"
+	"filename" ""
+	"origin" "-5981.259765625 6325.2099609375 64.8300018311"
+	"angles" "0 -179.8500061035 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_6"
+	"filename" ""
+	"origin" "-5981.0600585938 6246.8901367188 62.2799987793"
+	"angles" "0 -179.8500061035 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_2"
+	"filename" ""
+	"origin" "-5980.7299804688 6118.3901367188 61.3199996948"
+	"angles" "0 -179.8500061035 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_7"
+	"filename" ""
+	"origin" "-5980.3901367188 5987.5200195313 71.25"
+	"angles" "0 -179.8500061035 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_9"
+	"filename" ""
+	"origin" "-5980.1098632813 5863.4702148438 72.0500030518"
+	"angles" "0 -179.9199981689 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_8"
+	"filename" ""
+	"origin" "-5979.9501953125 5752.669921875 72.0500030518"
+	"angles" "0 -179.9199981689 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_1"
+	"filename" ""
+	"origin" "-5601.1000976563 6570.7001953125 71.25"
+	"angles" "0 101.8399963379 0"
+	"group" 0
+	"rarity" 0
+}
+"entity"
+{
+	"classname" "info_item_position"
+	"targetname" "charger_spawn_point_10"
+	"filename" ""
+	"origin" "-5725.9702148438 5818.9399414063 74.9400024414"
+	"angles" "0 -106.0599975586 0"
+	"group" 0
+	"rarity" 0
+}
