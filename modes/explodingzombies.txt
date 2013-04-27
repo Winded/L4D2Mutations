@@ -1,0 +1,19 @@
+"explodingzombies"
+{
+	"base"			"explodingzombies"
+	"maxplayers"	"4"
+	"hasdifficulty"	"0"
+	"singlechapter"	"1"
+	
+	"DisplayTitle"	"Exploding Zombies"
+	
+	"Description"	"Kaboom! Zombies explode when they die. Not boomer explode, I mean really explode. So you might not want to use a melee."
+	
+	"Image"			"maps/any"
+	"Author"		"Winded"
+	
+	convar
+	{
+		
+	}
+}
