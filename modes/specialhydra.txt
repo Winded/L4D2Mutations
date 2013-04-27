@@ -1,0 +1,19 @@
+"specialhydra"
+{
+	"base"			"specialhydra"
+	"maxplayers"	"4"
+	"hasdifficulty"	"0"
+	"singlechapter"	"1"
+	
+	"DisplayTitle"	"The Special Hydra"
+	
+	"Description"	"Yep, for every special infected you kill, two will replace it. So for your own safety, don't kill them! Oh, also, avoid chargers."
+	
+	"Image"			"maps/any"
+	"Author"		"Winded"
+	
+	convar
+	{
+		
+	}
+}
