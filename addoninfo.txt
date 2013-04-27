@@ -2,14 +2,15 @@
  
 "AddonInfo"
 {
-	addonSteamAppID          	550								// 500 is the app ID for Left 4 Dead
-	addontitle               	"Winded's Mutations"				// Add-on title that shows up in Add-ons list. ~20 chars max
-	addonversion             	1.0								// Version number of add-on version of the form <major>.<minor>
-	addontagline             	"Dev area for mutations"				// Add-on tagline or wrap-up- a short description. ~100 chars max
-	addonauthor              	"Winded"							// Name/alias of the author
+	addonSteamAppID          	550										// 500 is the app ID for Left 4 Dead
+	addontitle               	"Exploding Zombies"						// Add-on title that shows up in Add-ons list. ~20 chars max
+	addonversion             	1.0										// Version number of add-on version of the form <major>.<minor>
+	addontagline             	"Kaboom! Zombies are rigged to blow."	// Add-on tagline or wrap-up- a short description. ~100 chars max
+	addonauthor              	"Winded"								// Name/alias of the author
 	addonauthorSteamID			"http://steamcommunity.com/id/windedd/"	// (Optional) Steam ID of author. We use this to construct a URL to the author's page.
  
-	addonDescription        		"Dev area for mutations, blehblehbleh"	// short description that appears in the Add-on list screen...
+	// short description that appears in the Add-on list screen...
+	addonDescription        		"Kaboom! Zombies explode when they die. Not boomer explode, I mean really explode. So you might not want to use a melee."
 
 	addonContent_BackgroundMovie	0		//Provides a replacement for the background movie.
 	addonContent_Survivor		0		//Provides a new survivor model. 0=false, 1=true, String in quotes if replaces specific single character, i.e. "Francis"
