@@ -1,0 +1,42 @@
+"mission"
+{
+	"Name"			"ExplodingZombies"
+	"Version"		"1"
+	"Author"		"Winded"
+	"Website"		""
+	"BuiltIn"		"0"
+	
+	"DisplayTitle"	"Exploding Zombies"
+	"Description"	"Exploding Zombies"
+	
+	"Image"		"maps/any"
+	"OuttroImage"	"vgui/Left4Dead2Logo"
+	
+	"meleeweapons"	""
+	
+	"survivor_set"	"2"		// Which set of survivors should be used. 1=L4D1, 2=L4D2
+
+	"modes"
+	{
+		"explodingzombies"
+		{
+			"1"
+			{
+				"Map" "c1m1_hotel"
+				"DisplayName" "Hotel"
+				"Image" "maps/c1m1_hotel"
+			}		
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

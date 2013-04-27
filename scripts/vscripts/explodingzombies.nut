@@ -42,13 +42,13 @@ MutationOptions <-
 {
 	CommonLimit  = 20
 
-	BoomerLimit  = 0
+	BoomerLimit  = 4
  	ChargerLimit = 0
  	HunterLimit  = 0
 	JockeyLimit  = 0
 	SpitterLimit = 0
 	SmokerLimit  = 0
-	MaxSpecials  = 0
+	MaxSpecials  = 4
 };
 
 MutationState <-
@@ -56,13 +56,30 @@ MutationState <-
 
 };
 
+EntIndexRegex <- regexp("\\d+");
+
+function GetEntIndex(entity)
+{
+	local str = entity.tostring();
+
+	local m = EntIndexRegex.capture(str);
+
+	if(m.len() == 0) return -1;
+
+	local begin = m[0].begin;
+	local end = m[0].end;
+	local id = str.slice(begin, end).tointeger();
+
+	return id;
+}
+
 function GetInfected(id)
 {
 	local ent = null;
 
-	while((ent = Entities.FindByClassname("infected", ent)) != null)
+	while((ent = Entities.FindByClassname(ent, "infected")) != null)
 	{
-		if(ent.EntIndex() == id)
+		if(GetEntIndex(ent) == id)
 			return ent;
 	}
 
@@ -71,7 +88,7 @@ function GetInfected(id)
 
 function OnGameEvent_zombie_death(params)
 {
-	
+
 	local e = GetInfected(params.victim);
 	if(e == null) return;
 
