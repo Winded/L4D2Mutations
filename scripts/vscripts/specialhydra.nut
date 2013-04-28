@@ -36,22 +36,20 @@ MutationOptions <-
 	TotalSmokers = 0
 	TotalChargers = 0
 
-	//SurvivorMaxIncapacitatedCount = 0
-
 	DefaultItems =
 	[
-	"weapon_rifle",
-	"weapon_machete",
-	"weapon_molotov"
+		"weapon_rifle",
+		"weapon_machete",
+		"weapon_molotov"
 	]
 
 	function GetDefaultItem(idx)
 	{
-	if(idx < DefaultItems.len())
-	{
-		return DefaultItems[idx];
-	}
-	return 0;
+		if(idx < DefaultItems.len())
+		{
+			return DefaultItems[idx];
+		}
+		return 0;
 	}
 }
 
@@ -61,17 +59,32 @@ MutationState <-
 	SpawnRandMax = 5.0
 }
 
-function GetEntityFromUserId(userid) 
+EntIndexRegex <- regexp("\\d+");
+
+function GetEntIndex(entity)
 {
-	local e = null;
+	local str = entity.tostring();
 
-	while((e = Entities.FindByClassname(e, "player")) != null)
+	local m = EntIndexRegex.capture(str);
+
+	if(m.len() == 0) return -1;
+
+	local begin = m[0].begin;
+	local end = m[0].end;
+	local id = str.slice(begin, end).tointeger();
+
+	return id;
+}
+
+function GetInfected(id)
+{
+	local ent = null;
+
+	while((ent = Entities.FindByClassname(ent, "player")) != null)
 	{
-		if(e.GetPlayerUserId() == userid)
-			return e;
+		if(GetEntIndex(ent) == id)
+			return ent;
 	}
-
-	Msg("NULL");
 
 	return null;
 }
@@ -98,8 +111,6 @@ function HydraSpawn(zombie)
 		ang = QAngle(0, 0, 0)
 	}
 
-	Msg("SPAWNING")
-
 	spawnTable.pos = z1pos;
 	ZSpawn(spawnTable);
 	spawnTable.pos = z2pos;
@@ -108,9 +119,7 @@ function HydraSpawn(zombie)
 
 function OnGameEvent_zombie_death(params)
 {
-	Msg("ZOMBIE DEATH!");
-
-	local ent = GetEntityFromUserId(params.victim);
+	local ent = GetInfected(params.victim);
 	if(ent == null) return;
 
 	if(ent.GetZombieType() == ZOMBIE_SURVIVOR) return; //Shouldn't ever happen, but who knows..

@@ -1,9 +1,8 @@
 "specialhydra"
 {
-	"base"			"specialhydra"
+	"base"			"coop"
 	"maxplayers"	"4"
 	"hasdifficulty"	"0"
-	"singlechapter"	"1"
 	
 	"DisplayTitle"	"The Special Hydra"
 	
