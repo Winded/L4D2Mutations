@@ -17,7 +17,7 @@ MutationOptions <-
 	MegaMobSize = 0
 	WanderingZombieDensityModifier = 0
 
-	MaxSpecials		= 28 
+	MaxSpecials		= 4 
 	TankLimit		= 28 
 	WitchLimit		= 28
 	BoomerLimit		= 28
@@ -35,6 +35,9 @@ MutationOptions <-
 	TotalSpitters = 0
 	TotalSmokers = 0
 	TotalChargers = 0
+
+	SpecialRespawnInterval = 1
+	cm_SpecialRespawnInterval = 1
 
 	DefaultItems =
 	[
@@ -57,6 +60,8 @@ MutationState <-
 {
 	SpawnRandMin = -5.0
 	SpawnRandMax = 5.0
+
+	InitSpawnDone = false
 }
 
 EntIndexRegex <- regexp("\\d+");
@@ -83,6 +88,19 @@ function GetInfected(id)
 	while((ent = Entities.FindByClassname(ent, "player")) != null)
 	{
 		if(GetEntIndex(ent) == id)
+			return ent;
+	}
+
+	return null;
+}
+
+function GetPlayer(userid)
+{
+	local ent = null;
+
+	while((ent = Entities.FindByClassname(ent, "player")) != null)
+	{
+		if(ent.GetPlayerUserId() == userid)
 			return ent;
 	}
 
@@ -124,5 +142,12 @@ function OnGameEvent_zombie_death(params)
 
 	if(ent.GetZombieType() == ZOMBIE_SURVIVOR) return; //Shouldn't ever happen, but who knows..
 
+	SessionOptions.MaxSpecials++;
+
 	HydraSpawn(ent);
+}
+
+function OnGameEvent_player_left_start_area(params)
+{
+
 }
