@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "5997"
-	"mapversion" "2"
+	"mapversion" "4"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,19 +14,19 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "64"
+	"nGridSpacing" "16"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "2"
+	"mapversion" "4"
 	"classname" "worldspawn"
-	"skyname" "sky_l4d_rural02_hdr"
-	"maxpropscreenwidth" "-1"
-	"detailvbsp" "detail.vbsp"
 	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
 	"musicpostfix" "Waterfront"
+	"skyname" "sky_l4d_rural02_hdr"
 }
 entity
 {
@@ -34,12 +34,11 @@ entity
 	"classname" "env_explosion"
 	"fireballsprite" "sprites/zerogxplode.spr"
 	"ignoredClass" "0"
-	"iMagnitude" "10"
+	"iMagnitude" "50"
 	"iRadiusOverride" "100"
 	"rendermode" "5"
 	"spawnflags" "0"
 	"targetname" "zombie_explosion"
-	"vscripts" "zombie_explosion.nut"
 	"origin" "0 0 0"
 	editor
 	{
@@ -47,6 +46,85 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "4"
+	"classname" "ambient_generic"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "weapons/hegrenade/explode3.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "zombie_explosion_sound"
+	"volstart" "10"
+	"origin" "0 0 16"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "31"
+	"classname" "logic_script"
+	"Group00" "zombie_explosion"
+	"Group01" "zombie_explosion_sound"
+	"targetname" "zombie_explosion_script"
+	"vscripts" "zombie_explosion.nut"
+	connections
+	{
+		"OnUser1" "zombie_explosionExplode0-1"
+		"OnUser1" "zombie_explosion_soundPlaySound0-1"
+		"OnUser1" "zombie_explosion_killerEnable0-1"
+	}
+	"origin" "0 0 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "50"
+	"classname" "logic_timer"
+	"RefireTime" "5"
+	"spawnflags" "0"
+	"StartDisabled" "1"
+	"targetname" "zombie_explosion_killer"
+	"UseRandomTime" "0"
+	connections
+	{
+		"OnTimer" "zombie_explosionKill0-1"
+		"OnTimer" "zombie_explosion_soundKill0-1"
+		"OnTimer" "zombie_explosion_scriptKill0-1"
+		"OnTimer" "zombie_explosion_killerKill0-1"
+	}
+	"origin" "0 0 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
 	}
 }
 cameras

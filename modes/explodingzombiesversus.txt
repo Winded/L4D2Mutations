@@ -1,11 +1,11 @@
-"explodingzombies"
+"explodingzombiesversus"
 {
-	"base"			"coop"
-	"maxplayers"	"4"
+	"base"			"versus"
+	"maxplayers"	"8"
 	"hasdifficulty"	"0"
 	"singlechapter"	"0"
 	
-	"DisplayTitle"	"Exploding Zombies"
+	"DisplayTitle"	"Exploding Zombies Versus"
 	
 	"Description"	"Kaboom! Zombies explode when they die. Not boomer explode, I mean really explode. So you might not want to use a melee."
 	

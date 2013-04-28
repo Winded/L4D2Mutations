@@ -6,36 +6,14 @@
 	Made by Winded
 */
 
-if(!IncludeScript("utils/zombietypes.nut"))
+if(!IncludeScript("utils/zombietypes.nut", this))
 {
 	throw "zombietypes.nut failed to load!!";
 }
 
-// Hand-built entity group for explosions
-ZombieExplosionGroup <-
+if(!IncludeScript("entitygroups/zombie_explosion_group.nut", this))
 {
-	function GetSpawnList()   { return [ EntityGroup.SpawnTables.zombie_explosion ] }
-	function GetEntityGroup() { return EntityGroup }
-
-	EntityGroup =
-	{
-		SpawnPointName = "zombie_explosion_spawn_*"
-		SpawnTables = 
-		{
-			zombie_explosion =
-			{
-				initialSpawn = true
-				SpawnInfo =
-				{
-					classname = "env_explosion"
-					targetname = "zombie_explosion"
-					iMagnitude = 10
-					iRadiusOverride = 100
-					vscripts = "zombie_explosion.nut"
-				}
-			}
-		}
-	}
+	throw "Failed to load zombie_explosion group!!";
 }
 
 MutationOptions <-
@@ -94,6 +72,6 @@ function OnGameEvent_zombie_death(params)
 
 	local origin = e.GetOrigin();
 
-	g_MapScript.SpawnSingleAt(ZombieExplosionGroup.GetEntityGroup(), origin, QAngle());
+	g_MapScript.SpawnSingleAt(ZombieExplosion.GetEntityGroup(), origin, QAngle());
 
 }
