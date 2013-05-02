@@ -11,6 +11,11 @@ if(!IncludeScript("utils/zombietypes.nut", this))
 	throw "zombietypes.nut failed to load!!";
 }
 
+if(!IncludeScript("utils/entities.nut", this))
+{
+	throw "entities.nut failed to load!!";
+}
+
 if(!IncludeScript("entitygroups/zombie_explosion_group.nut", this))
 {
 	throw "Failed to load zombie_explosion group!!";
@@ -34,34 +39,9 @@ MutationState <-
 
 };
 
-EntIndexRegex <- regexp("\\d+");
-
-function GetEntIndex(entity)
-{
-	local str = entity.tostring();
-
-	local m = EntIndexRegex.capture(str);
-
-	if(m.len() == 0) return -1;
-
-	local begin = m[0].begin;
-	local end = m[0].end;
-	local id = str.slice(begin, end).tointeger();
-
-	return id;
-}
-
 function GetInfected(id)
 {
-	local ent = null;
-
-	while((ent = Entities.FindByClassname(ent, "infected")) != null)
-	{
-		if(GetEntIndex(ent) == id)
-			return ent;
-	}
-
-	return null;
+	return FindEntityById(id, "infected");
 }
 
 function OnGameEvent_zombie_death(params)
